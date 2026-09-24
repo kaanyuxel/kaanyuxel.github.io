@@ -1,0 +1,15 @@
+# ---- Site ayarları: bu kısmı kendinize göre değiştirin ----
+title: Ders Notları
+description: Derslerde işlediğimiz konular, örnekler ve kaynaklar.
+author: Kaan
+email: kaanyukseloyulmaz@ankara.edu.tr
+
+# ---- Teknik ayarlar (genelde değiştirmenize gerek yok) ----
+lang: tr
+timezone: Europe/Istanbul
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+permalink: /:categories/:title/
+exclude:
+  - README.md

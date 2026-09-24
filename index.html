@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<section class="hero">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</section>
+
+{% assign gruplar = site.posts | group_by: 'ders' | sort: 'name' %}
+{% for grup in gruplar %}
+<section class="course">
+  <h2>{% if grup.name != '' %}{{ grup.name }}{% else %}Diğer{% endif %}</h2>
+  <ul class="lesson-list">
+    {% assign dersler = grup.items | sort: 'date' | reverse %}
+    {% for d in dersler %}
+    <li>
+      <a href="{{ d.url | relative_url }}">
+        <span class="when">{% if d.hafta %}{{ d.hafta }}. hafta{% else %}{{ d.date | date: '%d.%m.%Y' }}{% endif %}</span>
+        <span class="name">{{ d.title }}</span>
+        {% if d.ozet %}<span class="sum">{{ d.ozet }}</span>{% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+
+{% if site.posts.size == 0 %}
+<p class="empty">Henüz ders notu eklenmedi.</p>
+{% endif %}
