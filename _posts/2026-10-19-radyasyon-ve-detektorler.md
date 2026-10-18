@@ -27,8 +27,11 @@ sudo apt install -y unrar
 cd ~ && wget https://kaanyuxel.github.io/dosyalar/G4DetectorDemo.rar
 unrar x G4DetectorDemo.rar
 source ~/programFiles/geant4/install/bin/geant4.sh
-mkdir -p ~/G4DetectorDemo-build && cd ~/G4DetectorDemo-build
-cmake ~/G4DetectorDemo && make -j4
+cd ~/G4DetectorDemo
+mkdir build
+cd build
+cmake ../.
+make -j4
 ./demo gamma_scan_Al.mac
 root -l 'draw_gamma.C("gscan_Al.root")'
 ```

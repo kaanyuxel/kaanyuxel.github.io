@@ -1,7 +1,7 @@
 ---
 layout: ders
 title: Geant4 ile Kodlama
-date: 2026-10-19 12:00:00 +0300
+date: 2026-10-19 00:01:00 +0300
 ders: Introduction
 hafta: 4
 ozet: İlk Geant4 simülasyonunu adım adım yazıyoruz; Landau dağılımı, Bragg tepesi ve süreçlerin payı.
@@ -37,10 +37,13 @@ Boş bir Geant4 iskeletini altı adımda dolduruyoruz:
 cd ~ && wget https://kaanyuxel.github.io/dosyalar/G4Ders-ilk-kodlama.rar
 unrar x G4Ders-ilk-kodlama.rar
 source ~/programFiles/geant4/install/bin/geant4.sh
-cmake -S ~/G4Ders-cozum -B ~/G4Ders-cozum-build
-cmake --build ~/G4Ders-cozum-build -j4
-cd ~/G4Ders-cozum-build && ./ders mip_si.mac
-root -l ~/G4Ders-cozum/draw_landau.C
+cd ~/G4Ders-cozum
+mkdir build
+cd build
+cmake ../.
+make -j4
+./ders mip_si.mac
+root -l ../draw_landau.C
 ```
 
 Diğer örnekler için `G4Ders-cozum` yerine `G4Ders-bragg` (makro `bragg.mac`) ya da `G4Ders-surec` (makrolar `surec_e.mac`, `surec_mu.mac`, `surec_p.mac`) yazın.
