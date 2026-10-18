@@ -43,7 +43,7 @@ cd build
 cmake ../.
 make -j4
 ./ders mip_si.mac
-root -l ../draw_landau.C
+root -l draw_landau.C
 ```
 
 Diğer örnekler için `G4Ders-cozum` yerine `G4Ders-bragg` (makro `bragg.mac`) ya da `G4Ders-surec` (makrolar `surec_e.mac`, `surec_mu.mac`, `surec_p.mac`) yazın.
