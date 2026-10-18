@@ -36,7 +36,6 @@ Boş bir Geant4 iskeletini altı adımda dolduruyoruz:
 ```bash
 cd ~ && wget https://kaanyuxel.github.io/dosyalar/G4Ders-ilk-kodlama.rar
 unrar x G4Ders-ilk-kodlama.rar
-source ~/programFiles/geant4/install/bin/geant4.sh
 cd ~/G4Ders-cozum
 mkdir build
 cd build

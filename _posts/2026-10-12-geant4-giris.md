@@ -19,7 +19,6 @@ ozet: Simülasyon, Monte Carlo yöntemi ve Geant4'ün temel kavramları.
 ## Uygulama: B1 örneği
 
 ```bash
-source ~/programFiles/geant4/install/bin/geant4.sh
 cp -r ~/programFiles/geant4/geant4-v11.3.0/examples/basic/B1 ~/B1
 cd ~/B1
 mkdir build

@@ -26,7 +26,6 @@ Kaynak: W. R. Leo, *Techniques for Nuclear and Particle Physics Experiments*, BÃ
 sudo apt install -y unrar
 cd ~ && wget https://kaanyuxel.github.io/dosyalar/G4DetectorDemo.rar
 unrar x G4DetectorDemo.rar
-source ~/programFiles/geant4/install/bin/geant4.sh
 cd ~/G4DetectorDemo
 mkdir build
 cd build
