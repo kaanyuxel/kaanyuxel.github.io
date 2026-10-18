@@ -63,7 +63,9 @@
     btn.className = 'copy';
     btn.textContent = 'Kopyala';
     btn.addEventListener('click', function () {
-      var text = pre.innerText.replace(/\n$/, '');
+      var code = pre.querySelector('code');
+      var text = code ? code.textContent : pre.textContent.replace(btn.textContent, '');
+      text = text.replace(/\n$/, '');
       navigator.clipboard.writeText(text).then(function () {
         btn.textContent = 'Kopyalandı';
         setTimeout(function () { btn.textContent = 'Kopyala'; }, 1500);
