@@ -7,7 +7,7 @@ hafta: 4
 ozet: İlk Geant4 simülasyonunu adım adım yazıyoruz; Landau dağılımı, Bragg tepesi ve süreçlerin payı.
 ---
 
-**Sunum:** [Türkçe (PDF)]({{ '/dosyalar/geant4-ile-kodlama-tr.pdf' | relative_url }})
+**Sunum:** [Türkçe (PDF)]({{ '/dosyalar/geant4-ile-kodlama-tr.pdf' | relative_url }}) · [English (PDF)]({{ '/dosyalar/geant4-first-coding-en.pdf' | relative_url }})
 
 **Örnek kodlar:** [G4Ders-ilk-kodlama.rar]({{ '/dosyalar/G4Ders-ilk-kodlama.rar' | relative_url }})
 
