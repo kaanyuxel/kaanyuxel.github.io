@@ -8,7 +8,7 @@ ozet: Işık üreten malzemeler ve ışığı sayan fotodetektörler; Geant4'te 
 
 **Sunum:** [Türkçe (PDF)]({{ '/dosyalar/sintilator-detektorleri-tr.pdf' | relative_url }}) · [English (PDF)]({{ '/dosyalar/scintillation-detectors-en.pdf' | relative_url }})
 
-**Kodlar:** [G4Ders-sintilator.rar]({{ '/dosyalar/G4Ders-sintilator.rar' | relative_url }}) (derste açılacak) · [G4Ders-sintilator-cozum.rar]({{ '/dosyalar/G4Ders-sintilator-cozum.rar' | relative_url }}) (çözüm)
+**Kod:** [G4Ders-sintilator.rar]({{ '/dosyalar/G4Ders-sintilator.rar' | relative_url }})
 
 ## Bu derste
 
